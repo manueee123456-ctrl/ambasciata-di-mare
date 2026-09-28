@@ -16,17 +16,17 @@ function nextAvailableDate() {
 
 const menus = {
   mare: [
-    { number: "01", name: "Gnocchi allo sgusciato di mare", description: "Il profumo del mare in un primo da ricordare.", image: "/images/pasta-clams.jpg", alt: "Pasta ai frutti di mare, fotografia illustrativa" },
-    { number: "02", name: "Grigliata di pesce del giorno", description: "La semplicità del pescato, tutto il suo sapore.", image: "/images/grilled-fish.jpg", alt: "Pesce alla griglia con limone, fotografia illustrativa" },
-    { number: "03", name: "Fritto misto di mare", description: "Croccante, dorato, da condividere fino all'ultimo boccone.", image: "/images/fritto.jpg", alt: "Fritto di calamari, fotografia illustrativa" },
+    { number: "01", name: "Gnocchi allo sgusciato di mare", description: "Il profumo del mare in un primo da ricordare.", image: "/image/piatto-1.webp", alt: "Pasta ai frutti di mare, fotografia illustrativa" },
+    { number: "02", name: "Grigliata di pesce del giorno", description: "La semplicità del pescato, tutto il suo sapore.", image: "/image/piatto-2.webp", alt: "Pesce alla griglia con limone, fotografia illustrativa" },
+    { number: "03", name: "Fritto misto di mare", description: "Croccante, dorato, da condividere fino all'ultimo boccone.", image: "/image/piatto-3.webp", alt: "Fritto di calamari, fotografia illustrativa" },
   ],
   pizza: [
-    { number: "01", name: "La pizza, come piace a noi", description: "Impasto fragrante e ingredienti scelti con cura.", image: "/images/pizza.jpg", alt: "Pizza appena sfornata, fotografia illustrativa" },
-    { number: "02", name: "Una serata da condividere", description: "Dal primo brindisi all'ultima fetta, a tavola si sta bene.", image: "/images/restaurant-atmosphere.jpg", alt: "Tavola apparecchiata in ristorante, fotografia illustrativa" },
+    { number: "01", name: "La pizza, come piace a noi", description: "Impasto fragrante e ingredienti scelti con cura.", image: "/image/piatto-1.webp", alt: "Pizza appena sfornata, fotografia illustrativa" },
+    { number: "02", name: "Una serata da condividere", description: "Dal primo brindisi all'ultima fetta, a tavola si sta bene.", image: "/image/locale-interno.webp", alt: "Tavola apparecchiata in ristorante, fotografia illustrativa" },
   ],
   dolci: [
-    { number: "01", name: "Il finale più dolce", description: "Lascia sempre un po' di spazio per il dessert.", image: "/images/dessert.jpg", alt: "Dolce al cucchiaio, fotografia illustrativa" },
-    { number: "02", name: "Un altro momento insieme", description: "Il caffè, due chiacchiere e il piacere di non avere fretta.", image: "/images/restaurant-atmosphere.jpg", alt: "Atmosfera di ristorante, fotografia illustrativa" },
+    { number: "01", name: "Il finale più dolce", description: "Lascia sempre un po' di spazio per il dessert.", image: "/image/piatto-2.webp", alt: "Dolce al cucchiaio, fotografia illustrativa" },
+    { number: "02", name: "Un altro momento insieme", description: "Il caffè, due chiacchiere e il piacere di non avere fretta.", image: "/image/locale-interno.webp", alt: "Atmosfera di ristorante, fotografia illustrativa" },
   ],
 };
 
@@ -127,7 +127,7 @@ export default function HomePage() {
       <section id="storia" className="intro-section section-pad">
         <div className="intro-heading reveal"><div className="eyebrow dark-eyebrow"><span className="eyebrow-line" /> BENVENUTI ALL&apos;AMBASCIATA</div><h2>Qui ogni tavola<br />ha una <em>storia da raccontare.</em></h2></div>
         <div className="intro-grid">
-          <div className="intro-image-wrap reveal"><img src="/images/ambasciata-venue.jpg" alt="La vera sala del ristorante Ambasciata di Mare a Rimini" /><span className="image-caption">01 / UN POSTO DA VIVERE</span></div>
+          <div className="intro-image-wrap reveal"><img src="/image/locale-interno.webp" alt="La vera sala del ristorante Ambasciata di Mare a Rimini" /><span className="image-caption">01 / UN POSTO DA VIVERE</span></div>
           <div className="intro-content reveal"><div className="small-star">✳</div><p className="intro-lead">Ci sono posti in cui entri per mangiare. E poi ci sono posti in cui vorresti restare ancora un po&apos;.</p><p>All&apos;Ambasciata di Mare portiamo in tavola sapori di mare, pizze e il piacere semplice di stare bene insieme. Un&apos;atmosfera accogliente, a pochi passi dalla spiaggia di Rimini, per ogni occasione che merita di essere ricordata.</p><a href="#esperienza" className="text-link dark-link">Scopri il nostro mondo <ArrowUpRight size={18} /></a><div className="intro-signature">Con il cuore, a Rimini.</div></div>
         </div>
       </section>
@@ -139,7 +139,7 @@ export default function HomePage() {
         <div className="menu-footer reveal"><span>Il menu e le proposte possono variare secondo disponibilità e stagione.</span><button onClick={openBooking} className="text-link dark-link">Prenota la tua esperienza <ArrowUpRight size={18} /></button></div>
       </section>
 
-      <section id="esperienza" className="experience-section"><div className="experience-photo"><img src="/images/rimini-beach.jpg" alt="La spiaggia di Rimini al tramonto, con file di ombrelloni" /></div><div className="experience-panel reveal"><div className="eyebrow light-eyebrow"><span className="eyebrow-line" /> IL NOSTRO ANGOLO DI RIMINI</div><h2>A due passi dal mare.<br /><em>Vicini a te.</em></h2><p>Una passeggiata sul lungomare, il profumo della cucina, una tavola pronta ad accoglierti. Per una cena in coppia, un pranzo in famiglia o una serata tra amici: il momento giusto è quello che scegli tu.</p><a href={mapUrl} target="_blank" rel="noopener noreferrer" className="text-link light-link">Vieni a trovarci <ArrowUpRight size={18} /></a><div className="experience-coordinate">44°02&apos;41.2&quot;N&nbsp; 12°36&apos;19.2&quot;E</div></div></section>
+      <section id="esperienza" className="experience-section"><div className="experience-photo"><img src="/image/spiaggia.webp" alt="La spiaggia di Rimini al tramonto, con file di ombrelloni" /></div><div className="experience-panel reveal"><div className="eyebrow light-eyebrow"><span className="eyebrow-line" /> IL NOSTRO ANGOLO DI RIMINI</div><h2>A due passi dal mare.<br /><em>Vicini a te.</em></h2><p>Una passeggiata sul lungomare, il profumo della cucina, una tavola pronta ad accoglierti. Per una cena in coppia, un pranzo in famiglia o una serata tra amici: il momento giusto è quello che scegli tu.</p><a href={mapUrl} target="_blank" rel="noopener noreferrer" className="text-link light-link">Vieni a trovarci <ArrowUpRight size={18} /></a><div className="experience-coordinate">44°02&apos;41.2&quot;N&nbsp; 12°36&apos;19.2&quot;E</div></div></section>
 
       <section id="recensioni" className="reviews-section section-pad"><div className="reviews-heading reveal"><div className="eyebrow dark-eyebrow"><span className="eyebrow-line" /> PAROLE CHE CI FANNO SORRIDERE</div><h2>Le storie più belle<br /><em>le raccontate voi.</em></h2></div><div className="reviews-layout reveal"><div className="rating-block"><span className="rating-big">4,4<span>/5</span></span><div className="rating-stars">★★★★★</div><p>Oltre 2.300 recensioni su Google</p><a href="https://www.google.com/maps/place/Ambasciata+di+Mare/" target="_blank" rel="noopener noreferrer" className="rating-link">Leggi le recensioni <ArrowUpRight size={16} /></a></div><div className="review-card"><span className="quote-mark">“</span><p key={reviewIndex} className="review-text">{reviews[reviewIndex].text}</p><div className="review-bottom"><div><strong>{reviews[reviewIndex].name}</strong><span>{reviews[reviewIndex].detail}</span></div><div className="review-controls"><button aria-label="Recensione precedente" onClick={() => setReviewIndex((reviewIndex + reviews.length - 1) % reviews.length)}><ArrowLeft size={18} /></button><button aria-label="Recensione successiva" onClick={() => setReviewIndex((reviewIndex + 1) % reviews.length)}><ArrowRight size={18} /></button></div></div></div></div></section>
 
